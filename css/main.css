@@ -1,0 +1,26 @@
+body {
+  /* background-color: rgb(235, 200, 155); */
+  background: linear-gradient(to bottom right, #e4c6ae, white);
+}
+.nav, .mainpage, .orderform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.nav li {
+  display: inline-flex;
+  background-color: orange;
+  margin: 10px, 10px;
+}
+.mainpage .col1, .col2 {
+  flex: 50%;
+  margin-bottom: 30px;
+  margin-right: 25px;
+  background-color: #990000;
+  height: 300px;
+}
+.footer {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
