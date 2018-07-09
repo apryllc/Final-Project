@@ -1,26 +1,63 @@
+/* site-wide */
+
 body {
-  /* background-color: rgb(235, 200, 155); */
-  background: linear-gradient(to bottom right, #e4c6ae, white);
+  background-color: tan;
+  
 }
 .nav, .mainpage, .orderform {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 } 
+
+/* navigation */
+
+.nav {
+  background-color: white;
+
+}
 .nav li {
   display: inline-flex;
-  background-color: orange;
-  margin: 10px, 10px;
+  color: white;
+  margin: 10px, 10px; 
 }
+
+/* about section */
+
 .mainpage .col1, .col2 {
   flex: 50%;
-  margin-bottom: 30px;
-  margin-right: 25px;
+  margin-top: 0;
+  padding: 20px;
   background-color: #990000;
-  height: 300px;
+  color: white;
+  height: 100%;
 }
+
+/* upcoming shows
+.mainpage .col3 {
+  flex-grow: 2;
+  margin-top: 0;
+  margin-bottom: 40px;
+  background-color: beige;
+} */
+
+/* contact info */
+
 .footer {
   display: flex;
-  align-items: left;
+  align-items: right;
   justify-content: left;
+  background-color: #990000;
+  color: white;
+}
+
+/* bootstrap changes */
+
+.jumbotron {
+  background-image: url("../img/peanuts-2.jpg");
+  opacity: 0.5;
+  background-size: cover;
+  background-color: white;
+  margin-bottom: 0;
 }
