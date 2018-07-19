@@ -1,9 +1,12 @@
 /* site-wide */
 
+/* adds background color */
 body {
   background-color: tan;
   
 }
+
+/* centers content using flexbox */
 .nav, .mainpage, .orderform {
   display: flex;
   align-items: center;
@@ -11,12 +14,12 @@ body {
 } 
 
 /* navigation */
-
 .nav {
   background-color: white;
   background-color: ;
-
 }
+
+/* lines up navigation links inline (next to each other) */
 .nav li {
   display: inline-flex;
   color: white;
@@ -28,7 +31,7 @@ a:link {
 
 }
 /* about section */
-
+/* flexbox creates the 2-column layout with each column taking up half of the viewport */
 .mainpage .col1, .col2 {
   flex: 50%;
   margin-top: 0;
@@ -47,7 +50,6 @@ a:link {
 } */
 
 /* contact info */
-
 .footer {
   display: flex;
   align-items: right;
@@ -57,10 +59,12 @@ a:link {
 }
 
 /* bootstrap changes */
-
 .jumbotron {
+/* specifies background image   */
   background-image: url("../img/peanuts-2.jpg");
+/* makes image see thru */
   opacity: 0.5;
+/* makes background image fill the size of the jumbotron */
   background-size: cover;
   background-color: white;
   margin-bottom: 0;
