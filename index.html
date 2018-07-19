@@ -39,9 +39,10 @@
     Aliquam non nisi dui. Ut placerat gravida ex, ac dignissim odio feugiat non. Vivamus feugiat eleifend massa et tincidunt. Etiam laoreet et felis et gravida. Nulla mattis arcu et sem scelerisque interdum. Etiam ac fringilla arcu. Fusce quis est magna. Morbi hendrerit consequat lacus. Sed at purus volutpat, blandit tortor vitae, congue urna.</p>
   </div>
   </div>
-<div class="orderform">
-    <form action="_blank" method="post">
+  <div class="orderform">
+    <form action="#" method="post">
       <fieldset>
+        <legend>Place an Order</legend>
       <label for="regbrittle">Regular Brittle ($12/lb)</label><br>
       <select name="regbrittle">
         <option value="peanut">Peanut</option>
@@ -50,7 +51,7 @@
         <option value="pecan">Pecan</option>
         <option value="cashew">Cashew</option>
       </select>
-      <br>        
+      <br>
       <label for="sugfreebrittle">Sugarfree Brittle ($12/lb)</label><br>
       <select name="sugfreebrittle">
         <option value="peanut">Peanut</option>
@@ -62,6 +63,7 @@
       </fieldset>
       <fieldset>
       <label for="lbs"># of lbs</label>
+      <br>
       <input type="text">
       </fieldset>
       <fieldset>
@@ -88,6 +90,10 @@
       <input type="text" id="zip" name="zip">
     </fieldset>
       <br>
+      <legend>Subtotal:</legend>
+      <input type="text" id="subtotal" name="subtotal"><br>
+      <br>
+      <input type="submit" id="submitbtn" value="Add to Cart">
     </form>
 </div>
 <div class="footer" id="footer">
@@ -95,5 +101,6 @@
 Phone: 1-800-254-1249<br>
 mom.metreats@yahoo.com</p>
 </div>
+<script src="js/app.js"></script>
 </body>
 </html>
