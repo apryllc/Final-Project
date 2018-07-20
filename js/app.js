@@ -4,7 +4,7 @@ $("#submitbtn").on("click", function() {
 // variables declared (let is constant) //    
     let email = $("#email");
 // below variable is a standard regular expression //    
-    let emailRegex = /^[@]+$/;
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 // if-else loop //
 // test method checks the value of the email variable against the regular expression variable //    
     if (emailRegex.test(email.val()) === true) {

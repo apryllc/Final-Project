@@ -16,7 +16,6 @@ body {
 /* navigation */
 .nav {
   background-color: white;
-  background-color: ;
 }
 
 /* lines up navigation links inline (next to each other) */
@@ -35,10 +34,16 @@ a:link {
 .mainpage .col1, .col2 {
   flex: 50%;
   margin-top: 0;
+  margin-bottom: 20px;
   padding: 20px;
   background-color: #990000;
+  border-top: solid black;
+  border-bottom: solid black;
   color: white;
   height: 100%;
+}
+
+.orderform {
 }
 
 /* upcoming shows
@@ -51,11 +56,12 @@ a:link {
 
 /* contact info */
 .footer {
+  margin-top: 20px;
+  padding-top: 10px;
   display: flex;
-  align-items: right;
-  justify-content: left;
   background-color: #990000;
   color: white;
+  text-align: left;
 }
 
 /* bootstrap changes */
