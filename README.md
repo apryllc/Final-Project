@@ -2,7 +2,7 @@
 
 ## Description
 ```
-A brief description of your project
+This project is a very basic redesign of the site momandmetreats.com, a local peanut brittle company, using the basic skills I've learning through the Front End Web Development course with Code Louisville. My basic goal was to simplify the site and par it down to one page where customers could quickly see basic info and easily place orders.
 
 ```
 

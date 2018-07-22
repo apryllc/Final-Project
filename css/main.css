@@ -3,45 +3,35 @@
 /* adds background color */
 body {
   background-color: tan;
-  
 }
 
 /* centers content using flexbox */
-.nav, .mainpage {
+.mainpage {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 } 
 
-/* navigation */
-.nav {
-  background-color: tan;
-  text: white;
+.nav ul {
+  padding: 0;
+  list-style-type: none;
 }
 
-/* lines up navigation links inline (next to each other) */
-.nav li {
-  display: inline-flex;
-  color: white;
-  padding: 5px;
-}
-
-a:link {
-  color: black;
-
-}
 /* about section */
+.mainpage {
+  align-items: stretch;
+}
+
 /* flexbox creates the 2-column layout with each column taking up half of the viewport */
 .mainpage .col1, .col2 {
   flex: 50%;
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 1em 1em 2em;
   background-color: #990000;
   border-top: solid black;
   border-bottom: solid black;
   color: beige;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .orderform {
@@ -55,12 +45,12 @@ a:link {
 
 /* contact info */
 .footer {
+  display: flex;
+  justify-content: space-between;
   margin-top: 30px;
   padding-top: 10px;
-  display: flex;
   background-color: #990000;
   color: white;
-  text-align: left;
   border-top: solid black;
 }
 
@@ -68,8 +58,7 @@ a:link {
 .jumbotron {
 /* specifies background image   */
   background-image: url("../img/peanuts-white-background.jpg");
-/* makes image see thru */
-/* makes background image fill the size of the jumbotron */
+/* makes background image tile the size of the jumbotron */
   background-size: tile;
   background-color: white;
   margin-bottom: 0;
