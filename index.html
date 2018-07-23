@@ -34,9 +34,10 @@
   <!-- order form -->
   <div class="orderform">
     <form action="#" method="post">
-      <fieldset>
-        <center><h3>Place an Order</h3></center>
-      <label for="regbrittle">Regular Brittle ($12/lb)</label><br>
+      <center><h3>Place an Order</h3></center><br>
+      <fieldset> 
+      <legend>Basic Info:</legend>
+        <label for="regbrittle">Regular Brittle ($12/lb)</label><br>
       <select name="regbrittle">
         <option label="None"></option>
         <option value="peanut">Peanut</option>
@@ -57,9 +58,9 @@
       </select> 
       </fieldset>
       <fieldset>
-      <label for="lbs"># of lbs</label>
+      <label for="lbs"># of lbs:</label>
       <br>
-      <input type="text">
+      <input type="text" id="lbs" input size="3" name="lbs">
       </fieldset>
       <fieldset>
       <label for="name">Name:</label><br>
@@ -72,21 +73,21 @@
       <br>
     <fieldset>
       <legend>Address:</legend>
-      <label for="street">Street:</label>
-      <input type="text" id="street" name="street">
-      <label for="aptnumber">Apartment Number:</label>
-      <input type="text" id="aptnumber" name="aptnumber">
+      <label for="street">Street:</label><br>
+      <input type="text" id="street" name="street"><br>
+      <label for="aptnumber">Apartment #:</label><br>
+      <input type="text" id="aptnumber" input size="5" name="aptnumber">
       <br>
-      <label for="city">City:</label>
-      <input type="text" id="city" name="city">
-      <label for="name">State:</label>
-      <input type="text" id="state" name="state">
-      <label for="name">Zip:</label>
-      <input type="text" id="zip" name="zip">
+      <label for="city">City:</label><br>
+      <input type="text" id="city" name="city"><br>
+      <label for="name">State:</label><br>
+      <input type="text" id="state" input size="2" name="state"><br>
+      <label for="name">Zip:</label><br>
+      <input type="text" id="zip" input size="5" name="zip"><br>
     </fieldset>
       <br>
       <legend>Subtotal:</legend>
-      <input type="text" id="subtotal" name="subtotal"><br>
+      <input type="text" id="subtotal" input size="7" name="subtotal"><br>
       <br>
       <input type="submit" id="submitbtn" value="Add to Cart">
     </form>
