@@ -9,17 +9,13 @@ body {
 .mainpage {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   flex-wrap: wrap;
 } 
 
 .nav ul {
   padding: 0;
   list-style-type: none;
-}
-
-/* about section */
-.mainpage {
-  align-items: stretch;
 }
 
 /* flexbox creates the 2-column layout with each column taking up half of the viewport */
@@ -31,12 +27,10 @@ body {
   border-top: solid black;
   border-bottom: solid black;
   color: beige;
-  /* height: 100%; */
 }
 
 .orderform {
   width: 50%;
-  /* border: solid black; */
   border-radius: 10%;
   background: beige;
   padding: 30px;
@@ -46,7 +40,7 @@ body {
 /* contact info */
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 30px;
   padding-top: 10px;
   background-color: #990000;
@@ -62,4 +56,22 @@ body {
   background-size: tile;
   background-color: white;
   margin-bottom: 0;
+}
+
+/* media queries */
+/* defines device  and breakpoint */
+@media only screen and (max-width: 768px) {
+/* changes direction of flex children */
+  .mainpage {
+    flex-direction: column;
+  }
+
+  .mainpage .col1 {
+    margin-bottom: 5px;
+  }
+
+.orderform {
+  width: 80%;
+  border-radius: 15%;
+}
 }
