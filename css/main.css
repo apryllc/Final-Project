@@ -48,6 +48,12 @@ body {
   border-top: solid black;
 }
 
+/* validation style for jquery */
+.validation {
+  border: .5px solid red;
+  background-color: lightgray;
+}
+
 /* bootstrap changes */
 .jumbotron {
 /* specifies background image   */

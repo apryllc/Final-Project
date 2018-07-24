@@ -1,6 +1,6 @@
 
 // jquery selects the submit button, then on that item listen for clicks and runs the defined function //
-$("#submitbtn").on("click", function() {
+$("#submitbtn").on("click", function(submit) {
 // variables declared (let is constant) //    
     let email = $("#email");
 // below variable is a standard regular expression //
@@ -11,9 +11,16 @@ $("#submitbtn").on("click", function() {
     if (emailRegex.test(email.val()) === true) {
 // if true //
         alert('Thanks for your order!');
+// prevents page from reloading //
+        submit.preventDefault();
     } 
 // if false //
     else {
-      alert('Please enter a valid email address.');
+//select email box in form, adds validation class styles from css, then inserts html message after //
+    $("#email").addClass("validation").after("<br><b>Please enter a valid email address.<b>");
+// prevents page from reloading //
+    submit.preventDefault();
     }
   });
+
+  
