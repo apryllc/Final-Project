@@ -26,6 +26,9 @@ Makes order form takes up 50% of viewport, with a beige background and rounded c
 .footer
 Creates flex container and puts equal space around contents. Adds margin, padding, background color to match colums, white text, and top black border.
 
+*validation
+Adds red border and gray background to email ID if user input evaluates as false in Javascript function.
+
 .jumbotron
 Overrides default Bootstrap styles, specifies background image that tiles over the entire jumbotron, adds fall-back white background and removes margin.
 
@@ -37,6 +40,6 @@ Overrides default Bootstrap styles, specifies background image that tiles over t
 ```
 The javascript functions I created are:
 
-1. Using jQuery, I selected the submit button class and added a click event. On the click event, I ran a function to compare the user inputted value of the submit button to a regular expression string that matches a standard email address. If the function evaluates as true, a success message appears thanking the user for their order; if not, a request for a valid email.
+1. Using jQuery, I selected the submit button class and added a click event. On the click event, I ran a function to compare the user inputted value of the email ID to a regular expression string that matches a standard email address. If the function evaluates as true, a order success message is dyanamically generated via Javascript thanking the user for their order; if not, the email text box highlights with a red border and gray background to alert the user of the input error.
 
 ```

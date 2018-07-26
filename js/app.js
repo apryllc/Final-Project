@@ -12,12 +12,14 @@ $("#submitbtn").on("click", function(submit) {
 // if true //
 //selects order form div, replaces it with html message confirming order //
         $(".orderform").html("<h3>Thanks for placing an order with Louisville's Best Brittle company!<br><br>Your order will be shipped in 2-3 business days to the address provided.<br><br>Happy snacking!</h3>");
-// prevents page from reloading
+// prevents page from reloading //
         submit.preventDefault();
     } 
 // if false //
     else {
-//select email box in form, adds validation class styles from css, then inserts html message after //
+// jumps back to email box //
+// selects email box in form, adds validation class styles from css, then inserts html message after //
+    window.location.href = "#email";
     $("#email").addClass("validation").after("<br><b>Please enter a valid email address.<b>");
 // prevents page from reloading //
     submit.preventDefault();
