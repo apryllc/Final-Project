@@ -40,6 +40,6 @@ Overrides default Bootstrap styles, specifies background image that tiles over t
 ```
 The javascript functions I created are:
 
-1. Using jQuery, I selected the submit button class and added a click event. On the click event, I ran a function to compare the user inputted value of the email ID to a regular expression string that matches a standard email address. If the function evaluates as true, a order success message is dyanamically generated via Javascript thanking the user for their order; if not, the email text box highlights with a red border and gray background to alert the user of the input error.
+1. Using jQuery, I selected the submit button class and added a click event. On the click event, I ran a function to compare the user inputted value of the email ID to a regular expression string that matches a standard email address. If the function evaluates as true, a order success message is dynamically generated via Javascript thanking the user for their order; if not, the email text box highlights with a red border and gray background to alert the user of the input error.
 
 ```
